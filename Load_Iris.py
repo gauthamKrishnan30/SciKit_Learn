@@ -165,11 +165,9 @@ elif menu=="LogisticRegression":
     st.subheader("Confusion Matrix")
     st.info(confusion)
 
-    
-
     score=cross_val_predict(model,X,y,cv=5)
     st.subheader("Cross Validation")
-    st.info(score)
+    st.info(score.mean())
 
     st.subheader("Classification Report")
     class1=classification_report(y_test,y_predict)
@@ -244,7 +242,7 @@ elif menu=="KNeighborsClassifier":
     
     score=cross_val_predict(model,X,y,cv=5)
     st.subheader("Cross Validation")
-    st.info(score)
+    st.info(score.mean())
 
     st.subheader("Classification Report")
     class1=classification_report(y_test,y_predict)
