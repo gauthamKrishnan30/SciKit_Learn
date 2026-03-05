@@ -272,3 +272,5 @@ elif menu=="KNeighborsClassifier":
         with co2:
             st.subheader("y-KNeighborsClassifier.predict")
             st.info(y)
+
+    
