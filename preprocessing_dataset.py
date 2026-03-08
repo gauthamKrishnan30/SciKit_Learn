@@ -13,7 +13,7 @@ st.title("PREPROCESSING")
 
 st.write("Read File - AppleStore[ About rating]")
 
-df=pd.read_csv("ScikitLearn/AppleStore.csv")
+df=pd.read_csv("AppleStore.csv")
 df=df.drop(["id","track_name","currency","ver","cont_rating","prime_genre"], axis=1)
 y=df["user_rating"]
 
