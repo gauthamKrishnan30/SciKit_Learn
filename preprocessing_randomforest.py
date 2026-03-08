@@ -19,3 +19,4 @@ random_forest=RandomForestClassifier()
 random_forest.fit(X_train,y_train)
 B=random_forest.score (X_test,y_test)
 print(B)
+
