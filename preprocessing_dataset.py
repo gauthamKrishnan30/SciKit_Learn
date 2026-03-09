@@ -11,7 +11,7 @@ from sklearn.metrics import accuracy_score, classification_report, confusion_mat
 
 
 def load_data():
-    df = pd.read_csv("ScikitLearn/AppleStore.csv")
+    df = pd.read_csv("AppleStore.csv")
     return df
 
 
